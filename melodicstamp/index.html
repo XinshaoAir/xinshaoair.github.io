@@ -8,22 +8,38 @@
     <link rel="apple-touch-icon" href="assets/icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root { --apple-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-        body { font-family: var(--apple-font); -webkit-font-smoothing: antialiased; letter-spacing: -0.01em; overflow-x: hidden;}
-        .glass { 
-            background: rgba(255, 255, 255, 0.7); 
-            backdrop-filter: blur(20px); 
-            -webkit-backdrop-filter: blur(20px); 
+        :root {
+            --apple-font: "SF Pro", "SF Pro Text", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+        body {
+            font-family: var(--apple-font);
+            -webkit-font-smoothing: antialiased;
+            letter-spacing: -0.01em;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
         }
         @media (prefers-color-scheme: dark) {
-            .glass { 
+            .glass {
                 background: rgba(29, 29, 31, 0.7);
             }
         }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        .snap-x { scroll-snap-type: x mandatory; }
-        .snap-center { scroll-snap-align: center; }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .snap-x {
+            scroll-snap-type: x mandatory;
+        }
+        .snap-center {
+            scroll-snap-align: center;
+        }
     </style>
 </head>
 <body class="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
@@ -138,7 +154,7 @@
                 <p class="text-gray-500 dark:text-gray-400 text-[15px] leading-relaxed">针对 Apple 芯片优化，运行轻快且省电，只为最纯粹的聆听。</p>
             </div>
             <div>
-                <h3 class="text-[19px] font-semibold mb-4">原生体验</h3>
+                <h3 class="text-[19px] font-semibold mb-4">原生，一如惯常。</h3>
                 <p class="text-gray-500 dark:text-gray-400 text-[15px] leading-relaxed">完美支持媒体键、通知中心以及“正在播放”小组件。</p>
             </div>
         </div>

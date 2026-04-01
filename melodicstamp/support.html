@@ -8,9 +8,15 @@
     <link rel="apple-touch-icon" href="assets/icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root { --apple-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-        body { font-family: var(--apple-font); -webkit-font-smoothing: antialiased; letter-spacing: -0.01em; }
-        
+        :root {
+            --apple-font: "SF Pro", "SF Pro Text", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+        body {
+            font-family: var(--apple-font);
+            -webkit-font-smoothing: antialiased;
+            letter-spacing: -0.01em;
+            overflow-x: hidden;
+        }
         .glass { 
             background: rgba(255, 255, 255, 0.7); 
             backdrop-filter: blur(20px); 
@@ -235,16 +241,7 @@
                     <li><strong>歌词过滤开启后仍有部分创作者信息残留？</strong><br>过滤功能基于常见模式匹配，生僻或特殊字段可能遗漏，欢迎反馈歌词文件协助改进。</li>
                     <li><strong>是否支持均衡器？</strong><br>内置均衡器，可自定义频段，提升听感。</li>
                 </ul>
-
-                <h2>高级功能速览</h2>
-                <ul>
-                    <li><strong>元数据编辑器</strong> — 直接修改音频文件的标签信息，支持内嵌歌词同步编辑。</li>
-                    <li><strong>均衡器</strong> — 10 段均衡，预设多种风格。</li>
-                    <li><strong>海报卡片 / 全屏沉浸</strong> — 动态封面与歌词融合，支持背景“色彩融合”或实验性“流体扭曲”律动效果。</li>
-                    <li><strong>歌词过滤器实验</strong> — 隐藏 LRC 中常见的制作人/版权信息（测试性功能）。</li>
-                    <li><strong>播放统计 & 智能收藏</strong> — 本地记录播放次数，建立个人音乐档案。</li>
-                </ul>
-
+                
                 <div class="bg-gray-50 dark:bg-gray-900/40 rounded-2xl p-5 my-6 border border-gray-100 dark:border-gray-800">
                     <p class="text-sm text-gray-600 dark:text-gray-300 mb-0 flex items-start gap-2">
                         <span>本应用不提供云端歌词下载或识别，所有歌词需自行准备。但完善的本地匹配机制让您的歌词库井然有序。如需反馈问题或功能建议，欢迎邮件联系。</span>
