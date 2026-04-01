@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支持文档 - Melodic Stamp</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="apple-touch-icon" href="assets/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root { --apple-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { font-family: var(--apple-font); -webkit-font-smoothing: antialiased; letter-spacing: -0.01em; }
+        
+        .glass { 
+            background: rgba(255, 255, 255, 0.7); 
+            backdrop-filter: blur(20px); 
+            -webkit-backdrop-filter: blur(20px); 
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000000;
+            }
+            .glass { 
+                background: rgba(29, 29, 31, 0.7);
+            }
+            
+            .highlight-card {
+                background: #0a0a0c !important;
+                border: 0.5px solid rgba(255, 255, 255, 0.1) !important;
+                border-radius: 28px;
+                box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+            }
+            .highlight-card,
+            .highlight-card p,
+            .highlight-card h3,
+            .highlight-card span,
+            .highlight-card strong,
+            .highlight-card b {
+                color: #ffffff !important;
+            }
+            .highlight-card h3 {
+                font-weight: 600;
+                letter-spacing: -0.2px;
+            }
+            .prose-apple p,
+            .prose-apple li,
+            .prose-apple ul li {
+                color: #f0f0f4 !important;
+            }
+            .prose-apple strong,
+            .prose-apple b,
+            article strong,
+            article b,
+            .highlight-card strong {
+                color: #ffffff !important;
+                font-weight: 600;
+            }
+            .prose-apple h2 {
+                color: #ffffff;
+                letter-spacing: -0.02em;
+                font-weight: 620;
+            }
+            .prose-apple li::before {
+                color: #98989e;
+            }
+            footer {
+                background: #000000 !important;
+                border-top-color: rgba(255, 255, 255, 0.08) !important;
+            }
+            .border-gray-100 {
+                border-color: rgba(255, 255, 255, 0.08) !important;
+            }
+            .dark\:border-gray-800 {
+                border-color: rgba(255, 255, 255, 0.08) !important;
+            }
+            nav a {
+                transition: color 0.2s;
+            }
+            nav a:hover {
+                color: #ffffff !important;
+            }
+            
+            .text-gray-500.dark\:text-gray-400 {
+                color: #9c9ca2 !important;
+            }
+        }
+        .prose-apple h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-top: 3rem;
+            margin-bottom: 1.25rem;
+            border-bottom: 0.5px solid rgba(0,0,0,0.05);
+            padding-bottom: 0.5rem;
+        }
+        @media (prefers-color-scheme: dark) {
+            .prose-apple h2 {
+                border-bottom-color: rgba(255,255,255,0.08);
+            }
+        }
+        .prose-apple p {
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+            color: #1d1d1f;
+        }
+        .prose-apple strong {
+            font-weight: 600;
+            color: #000000;
+        }
+        .prose-apple ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 1.8rem;
+        }
+        .prose-apple li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.65rem;
+            line-height: 1.6;
+            color: #3a3a3c;
+        }
+        .prose-apple li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #86868b;
+            font-weight: 500;
+        }
+        .highlight-card {
+            background: #f5f5f7;
+            border-radius: 28px;
+            padding: 1.8rem 2rem;
+            margin: 2rem 0;
+            transition: all 0.2s ease;
+            border: 0.5px solid transparent;
+        }
+        .badge {
+            background: rgba(0,0,0,0.04);
+            border-radius: 20px;
+            padding: 0.2rem 0.8rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-right: 0.4rem;
+            margin-bottom: 0.5rem;
+        }
+        @media (prefers-color-scheme: dark) {
+            .badge {
+                background: rgba(255,255,255,0.08);
+                color: #dddddd;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
+
+    <nav class="fixed w-full z-50 glass border-b border-gray-100 dark:border-gray-800">
+        <div class="max-w-5xl mx-auto px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-semibold tracking-tighter hover:opacity-70 transition">Melodic Stamp</a>
+            <div class="space-x-10 text-[13px] font-medium text-gray-500 dark:text-gray-400">
+                <a href="privacy.html" class="hover:text-black dark:hover:text-white transition-colors">隐私</a>
+                <a href="support.html" class="text-black dark:text-white transition-colors">支持</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-40 pb-32 px-8">
+        <div class="max-w-3xl mx-auto">
+            <header class="mb-12 border-b border-gray-100 dark:border-gray-800 pb-8">
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">帮助与支持</h1>
+                <p class="text-gray-500 dark:text-gray-400">最后更新日期：2026年4月2日</p>
+            </header>
+
+            <article class="prose-apple text-[17px]">
+                <p>Melodic Stamp 是一款专为 macOS 设计的原生音乐播放器，完全运行于沙盒环境，不扫描无关目录，不联网收集数据。它拥有强大的音频兼容性，并深度支持 TTML 逐字歌词、LRC 增强型翻译/注音，为您提供纯净、沉浸的本地音乐体验。</p>
+
+                <h2>安装方式</h2>
+                <ul>
+                    <li><strong>App Store 正式版</strong> — 稳定可靠，通过 macOS App Store 直接获取。</li>
+                    <li><strong>TestFlight 测试版</strong> — 抢先体验新功能，名额有限，需接受潜在不稳定风险。加入测试前建议备份媒体库。<br>
+                    <span class="text-gray-500 dark:text-gray-400 text-sm">注意：测试版与正式版可相互替换（构建号后两位高者可覆盖，否则需卸载重装）。</span></li>
+                </ul>
+
+                <h2>音频格式支持</h2>
+                <p>Melodic Stamp 兼容几乎所有主流无损及有损格式，无需转码：</p>
+                <div class="mb-4 flex flex-wrap gap-1">
+                    <span class="badge">FLAC</span><span class="badge">MP3</span><span class="badge">Ogg Opus/Vorbis</span><span class="badge">DSF / DSDIFF (DSD64, DoP)</span>
+                    <span class="badge">Monkey‘s Audio (APE)</span><span class="badge">WavPack</span><span class="badge">True Audio</span><span class="badge">Shorten</span>
+                    <span class="badge">WAV / AIFF</span><span class="badge">Musepack</span><span class="badge">libsndfile 系列</span>
+                </div>
+
+                <h2>歌词格式支持</h2>
+                <p>精准显示原文、翻译、注音，支持逐字点亮与多轨对唱。</p>
+                <ul>
+                    <li><strong>TTML</strong> — 逐字 / 逐行歌词，支持对唱、背景歌词，兼容 AMLL TTML Database 与 Apple Music 逐字注音规范。</li>
+                    <li><strong>LRC</strong> — 基础歌词、逐字型 LRC、增强型 LRC（社区扩展格式：支持原文 + 翻译 + 注音连续或分段排列）。<br>
+                    <span class="text-gray-500 dark:text-gray-400 text-sm">注：LRC 若仅提供注音行而无翻译，注音会被识别为翻译，属格式限制。</span></li>
+                    <li><strong>内嵌歌词</strong> — 读取音频元数据（ID3 Lyrics）中的歌词。</li>
+                </ul>
+
+                <h2>快速上手</h2>
+                <p><strong>1. 导入音乐文件夹</strong><br>
+                执行以下任一操作：<br>
+                • 快捷键 <code class="bg-gray-100 dark:bg-gray-800 px-1 rounded">Command + L</code> 打开文件夹选择器，选中音乐目录。<br>
+                • 点按“点击添加文件夹”按钮，或直接拖拽文件夹至导入区域。<br>
+                Melodic Stamp 仅扫描您主动添加的文件夹，不会读取任何其他位置。</p>
+                <p><strong>2. 歌词自动匹配</strong><br>
+                应用会在导入的文件夹（含子文件夹）内，查找与音频文件<strong>同名</strong>的歌词文件。<br>
+                匹配优先级：<code>.ttml</code> 优先，其次为 <code>.lrc</code> 或 <code>.txt</code> 。若同时存在外置歌词与内嵌歌词，默认优先使用外置歌词（可在元数据编辑器中调整）。</p>
+                <p><strong>3. 开始播放</strong><br>
+                点击曲目即可播放，媒体库支持收藏、歌单、专辑及艺术家视图。还可通过菜单栏图标快速控制或显示当前歌词。</p>
+
+                <div class="highlight-card">
+                    <h3 class="text-lg font-semibold mb-2 text-black dark:text-white">隐私与安全核心</h3>
+                    <p class="text-[15px] leading-relaxed mb-0">本应用 <strong>不请求任何网络权限</strong>，绝不收集个人信息或上传音频。所有数据仅存于本地沙盒，卸载即清除。元数据编辑器会直接修改音频文件，建议编辑前备份重要文件。</p>
+                    <p class="text-[15px] leading-relaxed mt-3 mb-0">暂不支持 NAS、网络驱动器或挂载存储设备（稳定性考虑），计划后续通过 Jellyfin 等扩展网络库支持。</p>
+                </div>
+
+                <h2>个性化设置</h2>
+                <p>通过 <strong>设置 (⌘ ,)</strong> 可深度定制体验：</p>
+                <ul>
+                    <li><strong>窗口背景</strong> — 纯色 / 活力 / 空灵，调整模糊与混色效果。</li>
+                    <li><strong>歌词显示</strong> — 独立开关翻译、注音，支持粗体、淡出效果，实验性歌词渲染器（TextRender）可提升逐字精度。</li>
+                    <li><strong>菜单栏歌词</strong> — 显示当前歌词或光碟图标，支持逐字动画（占用稍高，属正常现象）。</li>
+                    <li><strong>媒体库</strong> — 文件夹自动观察、启动时刷新，可强制重新扫描元数据。</li>
+                    <li><strong>待播清单记忆</strong> — 重启后恢复播放队列及进度。</li>
+                    <li><strong>悬浮窗/常亮</strong> — 专注歌词页时可防止屏幕休眠。</li>
+                </ul>
+
+                <h2>常见问题</h2>
+                <ul>
+                    <li><strong>为什么无法导入 NAS 或挂载磁盘中的文件夹？</strong><br>为保证稳定，当前版本仅支持内置或直连本地存储。挂载设备存在读取延迟可能引发崩溃，后续将通过 Jellyfin 等方案支持网络库。</li>
+                    <li><strong>开启菜单栏歌词后不显示或只显示图标？</strong><br>macOS 在菜单栏空间不足时会自动隐藏第三方图标。可减少菜单栏项，或关闭逐字歌词模式尝试。</li>
+                    <li><strong>LRC 歌词中的注音被错误归为翻译行怎么办？</strong><br>LRC 本身无标准注音字段，当缺少翻译行时系统将注音行映射为翻译。建议使用 TTML 歌词获得完美逐字注音体验，或确保 LRC 包含翻译行结构。</li>
+                    <li><strong>歌词过滤开启后仍有部分创作者信息残留？</strong><br>过滤功能基于常见模式匹配，生僻或特殊字段可能遗漏，欢迎反馈歌词文件协助改进。</li>
+                    <li><strong>是否支持均衡器？</strong><br>内置均衡器，可自定义频段，提升听感。</li>
+                </ul>
+
+                <h2>高级功能速览</h2>
+                <ul>
+                    <li><strong>元数据编辑器</strong> — 直接修改音频文件的标签信息，支持内嵌歌词同步编辑。</li>
+                    <li><strong>均衡器</strong> — 10 段均衡，预设多种风格。</li>
+                    <li><strong>海报卡片 / 全屏沉浸</strong> — 动态封面与歌词融合，支持背景“色彩融合”或实验性“流体扭曲”律动效果。</li>
+                    <li><strong>歌词过滤器实验</strong> — 隐藏 LRC 中常见的制作人/版权信息（测试性功能）。</li>
+                    <li><strong>播放统计 & 智能收藏</strong> — 本地记录播放次数，建立个人音乐档案。</li>
+                </ul>
+
+                <div class="bg-gray-50 dark:bg-gray-900/40 rounded-2xl p-5 my-6 border border-gray-100 dark:border-gray-800">
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-0 flex items-start gap-2">
+                        <span>本应用不提供云端歌词下载或识别，所有歌词需自行准备。但完善的本地匹配机制让您的歌词库井然有序。如需反馈问题或功能建议，欢迎邮件联系。</span>
+                    </p>
+                </div>
+
+                <h2>9. 联系我们</h2>
+                <p>如果您对本政策有任何疑问，请联系开发者：<br>
+                <a href="mailto:xinshao_air@foxmail.com" class="text-[#0071e3] dark:text-[#2997ff] no-underline hover:underline">xinshao_air@foxmail.com</a></p>
+            </article>
+
+            <div class="mt-20 pt-6 border-t border-gray-100 dark:border-gray-800">
+                <a href="index.html" class="text-[#0071e3] dark:text-[#2997ff] font-medium hover:underline inline-flex items-center gap-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    返回 Melodic Stamp 官网
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-24 border-t border-gray-100 dark:border-gray-800 bg-[#f5f5f7] dark:bg-black">
+        <div class="max-w-5xl mx-auto px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-gray-400 dark:text-gray-500 text-[12px] space-y-4 md:space-y-0">
+                <div class="flex space-x-6">
+                    <span>© 2026 Melodic Stamp.</span>
+                    <a href="privacy.html" class="hover:text-black dark:hover:text-white transition-colors">隐私政策</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
